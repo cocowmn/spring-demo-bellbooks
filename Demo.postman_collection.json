@@ -1,0 +1,287 @@
+{
+	"info": {
+		"_postman_id": "b08a01fb-6752-4754-90d0-f8164ae26728",
+		"name": "Demo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Facility",
+			"item": [
+				{
+					"name": "Get Facility",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/e1776ddc-241b-4b84-9822-66eab3aacaf0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"e1776ddc-241b-4b84-9822-66eab3aacaf0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Facilities",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Facility",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"name\": \"Albermarle CI\",\n      \"addressLine1\": \"P.O. Box 460\",\n      \"city\": \"Badin\",\n      \"state\": \"NC\",\n      \"zip\": \"28009\"\n  }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Several Facilities",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n  {\n      \"name\": \"Albermarle CI\",\n      \"addressLine1\": \"P.O. Box 460\",\n      \"addressLine2\": null,\n      \"city\": \"Badin\",\n      \"state\": \"NC\",\n      \"zip\": \"28009\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Alexander CI\",\n      \"addressLine1\": \"633 Old Landfill Road\",\n      \"addressLine2\": null,\n      \"city\": \"Taylorsville\",\n      \"state\": \"NC\",\n      \"zip\": \"28681\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Anson CI\",\n      \"addressLine1\": \"P.O. Box 280\",\n      \"addressLine2\": null,\n      \"city\": \"Polkton\",\n      \"state\": \"NC\",\n      \"zip\": \"28135\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Avery-Mitchell CI\",\n      \"addressLine1\": \"600 Amity Park Road\",\n      \"addressLine2\": null,\n      \"city\": \"Spruce Pine\",\n      \"state\": \"NC\",\n      \"zip\": \"28777\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Bertie CI\",\n      \"addressLine1\": \"218 Cooper Hill Road\",\n      \"addressLine2\": null,\n      \"city\": \"Windsor\",\n      \"state\": \"NC\",\n      \"zip\": \"27983\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Butner Federal Medical Center\",\n      \"addressLine1\": \"P.O. Box 1600\",\n      \"addressLine2\": null,\n      \"city\": \"Butner\",\n      \"state\": \"NC\",\n      \"zip\": \"27509\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Caldwell Correctional Center\",\n      \"addressLine1\": \"480 Pleasant Hill Road\",\n      \"addressLine2\": null,\n      \"city\": \"Lenoir\",\n      \"state\": \"NC\",\n      \"zip\": \"28645\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Carteret Correctional Center\",\n      \"addressLine1\": \"P.O. Box 220\",\n      \"addressLine2\": null,\n      \"city\": \"Newport\",\n      \"state\": \"NC\",\n      \"zip\": \"28570\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Caswell Correctional Center\",\n      \"addressLine1\": \"444 County Home Road\",\n      \"addressLine2\": null,\n      \"city\": \"Blanch\",\n      \"state\": \"NC\",\n      \"zip\": \"27212\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Catawba Correctional Center\",\n      \"addressLine1\": \"1347 Prison Camp Road\",\n      \"addressLine2\": null,\n      \"city\": \"Newton\",\n      \"state\": \"NC\",\n      \"zip\": \"28658\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Central Prison\",\n      \"addressLine1\": \"1300 Western Boulevard\",\n      \"addressLine2\": null,\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27606\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Columbus CI\",\n      \"addressLine1\": \"1255 Prison Camp Road\",\n      \"addressLine2\": null,\n      \"city\": \"Whiteville\",\n      \"state\": \"NC\",\n      \"zip\": \"28472\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Craggy Correction Center\",\n      \"addressLine1\": \"2992 Riverside Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Asheville\",\n      \"state\": \"NC\",\n      \"zip\": \"28804\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Craven CI\",\n      \"addressLine1\": \"P.O. Box 839\",\n      \"addressLine2\": null,\n      \"city\": \"Vanceboro\",\n      \"state\": \"NC\",\n      \"zip\": \"28586\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Davidson Correctional Center\",\n      \"addressLine1\": \"P.O. Box 1977\",\n      \"addressLine2\": null,\n      \"city\": \"Lexington\",\n      \"state\": \"NC\",\n      \"zip\": \"27293\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Eastern CI\",\n      \"addressLine1\": \"P.O. Box 215\",\n      \"addressLine2\": null,\n      \"city\": \"Maury\",\n      \"state\": \"NC\",\n      \"zip\": \"28554\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"FCI Butner Low\",\n      \"addressLine1\": \"Old NC HWY 75\",\n      \"addressLine2\": null,\n      \"city\": \"Butner\",\n      \"state\": \"NC\",\n      \"zip\": \"27509\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"FCI Butner Medium I\",\n      \"addressLine1\": \"Old NC HWY 75\",\n      \"addressLine2\": null,\n      \"city\": \"Butner\",\n      \"state\": \"NC\",\n      \"zip\": \"27509\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"FCI Butner Medium II\",\n      \"addressLine1\": \"Old NC HWY 75\",\n      \"addressLine2\": null,\n      \"city\": \"Butner\",\n      \"state\": \"NC\",\n      \"zip\": \"27509\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"FCI Rivers\",\n      \"addressLine1\": \"P.O. Box 630\",\n      \"addressLine2\": null,\n      \"city\": \"Winton\",\n      \"state\": \"NC\",\n      \"zip\": \"27986\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Foothills CI\",\n      \"addressLine1\": \"5150 Western Avenue\",\n      \"addressLine2\": null,\n      \"city\": \"Morganton\",\n      \"state\": \"NC\",\n      \"zip\": \"28655\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Forsyth Correctional Center\",\n      \"addressLine1\": \"307 Craft Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Winston-Salem\",\n      \"state\": \"NC\",\n      \"zip\": \"27105\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Franklin Correctional Center\",\n      \"addressLine1\": \"Box 155\",\n      \"addressLine2\": null,\n      \"city\": \"Bunn\",\n      \"state\": \"NC\",\n      \"zip\": \"27508\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Gaston Correctional Center\",\n      \"addressLine1\": \"520 Justice Court\",\n      \"addressLine2\": null,\n      \"city\": \"Dallas\",\n      \"state\": \"NC\",\n      \"zip\": \"28034\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Granville CI\",\n      \"addressLine1\": \"P.O. Box 2500\",\n      \"addressLine2\": null,\n      \"city\": \"Butner\",\n      \"state\": \"NC\",\n      \"zip\": \"27509\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Greene CI\",\n      \"addressLine1\": \"P.O. Box 39\",\n      \"addressLine2\": null,\n      \"city\": \"Maury\",\n      \"state\": \"NC\",\n      \"zip\": \"28554\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Harnett CI\",\n      \"addressLine1\": \"P.O. Box 1569\",\n      \"addressLine2\": null,\n      \"city\": \"Lillington\",\n      \"state\": \"NC\",\n      \"zip\": \"27546\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Hyde CI\",\n      \"addressLine1\": \"P.O. Box 278\",\n      \"addressLine2\": null,\n      \"city\": \"Swan Quarter\",\n      \"state\": \"NC\",\n      \"zip\": \"27885\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Jail - Other\",\n      \"addressLine1\": \"N/A\",\n      \"addressLine2\": null,\n      \"city\": \"N/A\",\n      \"state\": \"AL\",\n      \"zip\": \"N/A\",\n      \"additionalInfo\": \"Represents an AL jail that is not yet in our system. Volunteers can select this as a placeholder and manually provide details about the address on the outgoing package.\"\n  },\n  {\n      \"name\": \"Jail - Other\",\n      \"addressLine1\": \"N/A\",\n      \"addressLine2\": null,\n      \"city\": \"N/A\",\n      \"state\": \"NC\",\n      \"zip\": \"N/A\",\n      \"additionalInfo\": \"Represents a NC jail that is not yet in our system. Volunteers can select this as a placeholder and manually provide details about the address on the outgoing package.\"\n  },\n  {\n      \"name\": \"Johnston CI\",\n      \"addressLine1\": \"2465 US 70 West\",\n      \"addressLine2\": null,\n      \"city\": \"Smithfield\",\n      \"state\": \"NC\",\n      \"zip\": \"27577\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Lincoln Correctional Center\",\n      \"addressLine1\": \"464 Roper Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Lincolnton\",\n      \"state\": \"NC\",\n      \"zip\": \"28092\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Lumberton CI\",\n      \"addressLine1\": \"75 Legend Road\",\n      \"addressLine2\": null,\n      \"city\": \"Lumberton\",\n      \"state\": \"NC\",\n      \"zip\": \"28359\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Marion CI\",\n      \"addressLine1\": \"355 Old Glenwood Road\",\n      \"addressLine2\": null,\n      \"city\": \"Marion\",\n      \"state\": \"NC\",\n      \"zip\": \"28752\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Maury CI\",\n      \"addressLine1\": \"P.O. Box 506\",\n      \"addressLine2\": null,\n      \"city\": \"Maury\",\n      \"state\": \"NC\",\n      \"zip\": \"28554\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Mountain View CI\",\n      \"addressLine1\": \"545 Amity Park Road\",\n      \"addressLine2\": null,\n      \"city\": \"Spruce Pine\",\n      \"state\": \"NC\",\n      \"zip\": \"28777\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"N.C. Correctional Institute for Women\",\n      \"addressLine1\": \"4287 Mail Service Center\",\n      \"addressLine2\": null,\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27699\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Nash CI\",\n      \"addressLine1\": \"P.O. Box 600\",\n      \"addressLine2\": null,\n      \"city\": \"Nashville\",\n      \"state\": \"NC\",\n      \"zip\": \"27856\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Neuse CI\",\n      \"addressLine1\": \"P.O. Box 2087\",\n      \"addressLine2\": null,\n      \"city\": \"Goldsboro\",\n      \"state\": \"NC\",\n      \"zip\": \"27533\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"New Hanover Correctional Center\",\n      \"addressLine1\": \"330 Division Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Wilmington\",\n      \"state\": \"NC\",\n      \"zip\": \"28401\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Orange Correctional Center\",\n      \"addressLine1\": \"P.O. Box 1149\",\n      \"addressLine2\": null,\n      \"city\": \"Hillsborough\",\n      \"state\": \"NC\",\n      \"zip\": \"27278\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Other\",\n      \"addressLine1\": \"N/A\",\n      \"addressLine2\": null,\n      \"city\": \"N/A\",\n      \"state\": \"AL\",\n      \"zip\": \"N/A\",\n      \"additionalInfo\": \"Represents some other type of destination in AL that is not a traditional facility we send to. Volunteers can select this as a placeholder and manually provide details about the address on the outgoing package.\"\n  },\n  {\n      \"name\": \"Other\",\n      \"addressLine1\": \"N/A\",\n      \"addressLine2\": null,\n      \"city\": \"N/A\",\n      \"state\": \"NC\",\n      \"zip\": \"N/A\",\n      \"additionalInfo\": \"Represents some other type of destination in NC that is not a traditional facility we send to. Volunteers can select this as a placeholder and manually provide details about the address on the outgoing package.\"\n  },\n  {\n      \"name\": \"Pamlico CI\",\n      \"addressLine1\": \"601 North Third Street\",\n      \"addressLine2\": null,\n      \"city\": \"Bayboro\",\n      \"state\": \"NC\",\n      \"zip\": \"28515\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Pasquotank CI\",\n      \"addressLine1\": \"527 Commerce Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Elizabeth City\",\n      \"state\": \"NC\",\n      \"zip\": \"27906\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Pender CI\",\n      \"addressLine1\": \"P.O. Box 1058\",\n      \"addressLine2\": null,\n      \"city\": \"Burgaw\",\n      \"state\": \"NC\",\n      \"zip\": \"28425\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Piedmont CI\",\n      \"addressLine1\": \"1245 Camp Road\",\n      \"addressLine2\": null,\n      \"city\": \"Salisbury\",\n      \"state\": \"NC\",\n      \"zip\": \"28147\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Randolph Correctional Center\",\n      \"addressLine1\": \"P.O. Box 4128\",\n      \"addressLine2\": null,\n      \"city\": \"Asheboro\",\n      \"state\": \"NC\",\n      \"zip\": \"27204\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Richmond CI\",\n      \"addressLine1\": \"P.O. Box 169\",\n      \"addressLine2\": null,\n      \"city\": \"Hoffman\",\n      \"state\": \"NC\",\n      \"zip\": \"28347\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Roanoke River CI\",\n      \"addressLine1\": \"2787 Caledonia Drive\",\n      \"addressLine2\": null,\n      \"city\": \"Tillery\",\n      \"state\": \"NC\",\n      \"zip\": \"27882\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Rutherford Correctional Center\",\n      \"addressLine1\": \"P.O. Box 127\",\n      \"addressLine2\": null,\n      \"city\": \"Spindale\",\n      \"state\": \"NC\",\n      \"zip\": \"28160\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Sampson Correctional Institution\",\n      \"addressLine1\": \"P.O. Box 1109\",\n      \"addressLine2\": null,\n      \"city\": \"Clinton\",\n      \"state\": \"NC\",\n      \"zip\": \"28328\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Sanford Correctional Center\",\n      \"addressLine1\": \"P.O. Box 2490\",\n      \"addressLine2\": null,\n      \"city\": \"Sanford\",\n      \"state\": \"NC\",\n      \"zip\": \"27330\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Scotland CI\",\n      \"addressLine1\": \"22385 McGirts Bridge Road\",\n      \"addressLine2\": null,\n      \"city\": \"Laurinburg\",\n      \"state\": \"NC\",\n      \"zip\": \"28353\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Southern CI\",\n      \"addressLine1\": \"272 Glen Road\",\n      \"addressLine2\": null,\n      \"city\": \"Troy\",\n      \"state\": \"NC\",\n      \"zip\": \"27371\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Tabor CI\",\n      \"addressLine1\": \"4600 Swamp Fox Highway\",\n      \"addressLine2\": null,\n      \"city\": \"West Tabor City\",\n      \"state\": \"NC\",\n      \"zip\": \"28463\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Tyrrell Prison Work Farm\",\n      \"addressLine1\": \"P.O. Box 840\",\n      \"addressLine2\": null,\n      \"city\": \"Columbia\",\n      \"state\": \"NC\",\n      \"zip\": \"27925\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Wake Correctional Center\",\n      \"addressLine1\": \"1000 Rock Quarry Road\",\n      \"addressLine2\": null,\n      \"city\": \"Raleigh\",\n      \"state\": \"NC\",\n      \"zip\": \"27610\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Warren CI\",\n      \"addressLine1\": \"P.O. Box 728\",\n      \"addressLine2\": null,\n      \"city\": \"Norlina\",\n      \"state\": \"NC\",\n      \"zip\": \"27563\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Western Correctional Center for Women\",\n      \"addressLine1\": \"55 Lake Eden Road\",\n      \"addressLine2\": null,\n      \"city\": \"Black Mountain\",\n      \"state\": \"NC\",\n      \"zip\": \"28711\",\n      \"additionalInfo\": null\n  },\n  {\n      \"name\": \"Wilkes Correctional Center\",\n      \"addressLine1\": \"404 Statesville Road\",\n      \"addressLine2\": null,\n      \"city\": \"North Wilkesboro\",\n      \"state\": \"NC\",\n      \"zip\": \"28659\",\n      \"additionalInfo\": null\n  }\n]\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/create/batch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"create",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Facility",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n      \"name\": \"Granville CI\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/c729638b-422d-4646-8a37-fff47743c03d",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"c729638b-422d-4646-8a37-fff47743c03d"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Several Facilities",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    \"7ee37bf6-7cfb-413f-81a3-4ed7ef2de727\",\n    \"2f9da809-7b93-4a5d-9eae-6a49d23acdc1\",\n    \"a112a032-bec0-41e4-aaa7-3577b7ec2072\"\n\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/delete/batch",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"delete",
+								"batch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Facility",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    \"ca68f54b-76fd-4b1f-99fc-0f695c5a5f38\",\n    \"541cdbbf-c121-445a-9e71-8b8dc6ce9e5a\",\n    \"0546351e-8ecb-4091-a9de-5ea19a4c6a46\"\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/delete/ca68f54b-76fd-4b1f-99fc-0f695c5a5f38",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"delete",
+								"ca68f54b-76fd-4b1f-99fc-0f695c5a5f38"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete All Facilities",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    \"ca68f54b-76fd-4b1f-99fc-0f695c5a5f38\",\n    \"541cdbbf-c121-445a-9e71-8b8dc6ce9e5a\",\n    \"0546351e-8ecb-4091-a9de-5ea19a4c6a46\"\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/v1/facility/delete/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"v1",
+								"facility",
+								"delete",
+								"all"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "[API Docs] HTML Landing Page",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api-docs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api-docs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "[API Docs] Yaml Configuration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/v3/api-docs.yaml",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"v3",
+						"api-docs.yaml"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
